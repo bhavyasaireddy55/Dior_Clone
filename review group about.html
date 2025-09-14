@@ -1,0 +1,183 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Dior</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #111;
+      margin: 0;
+    }
+    .navbar {
+      background-color: #fff;
+    }
+    .navbar-brand img {
+      height: 40px;
+    }
+    .hero-video {
+      position: relative;
+      height: 90vh;
+      overflow: hidden;
+    }
+    .hero-video video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+    .hero-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero-overlay h1 {
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+    }
+    .content-section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="https://pnghq.com/wp-content/uploads/2023/02/dior-logo-png-4187-1536x429.png" alt="Dior Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="review group product.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="services group review.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="review group contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Video -->
+<section class="hero-video">
+  <video autoplay muted loop playsinline>
+    <source src="https://diorama.dam-broadcast.com/pm_11872_1070_1070419-7pfuotlpgh.webm" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-overlay">
+    <h1>About the House of Dior</h1>
+  </div>
+</section>
+<!-- About Content -->
+<div class="container py-5">
+  <h1 class="mb-4 text-center">About Dior</h1>
+  <p>
+    Founded in 1946 by Christian Dior, the House of Dior has become a global symbol of elegance, luxury, and innovation in fashion. From haute couture to timeless fragrances, Dior represents the height of French sophistication.
+  </p>
+
+  <!-- Fashion Section -->
+  <h2 class="section-title">Fashion</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <p>
+        Dior is renowned for redefining femininity through exquisite tailoring, bold silhouettes, and couture craftsmanship. Each collection blends tradition with modern style.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://diorama.dam-broadcast.com/cdn-cgi/image/width=640,format=auto/pm_11872_1039_1039723-7f5kiyln23-whr.jpg" class="img-fluid product-image" alt="Fashion by Dior" />
+    </div>
+  </div>
+
+  <!-- Perfume Section -->
+  <h2 class="section-title">Fragrances</h2>
+  <div class="row align-items-center flex-md-row-reverse">
+    <div class="col-md-6">
+      <p>
+        Dior fragrances like <strong>Sauvage</strong> and <strong>Miss Dior</strong> have captivated the world with their unique scents. Each perfume is a statement of luxury and emotion.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dwdc4fbc47/Y0998004/Y0998004_C099600455_E03_GHC.jpg?sw=640" class="img-fluid product-image" alt="Dior Perfume" />
+    </div>
+  </div>
+
+  <!-- Accessories Section -->
+  <h2 class="section-title">Accessories</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <p>
+        From iconic handbags to statement sunglasses and jewelry, Dior accessories reflect refined craftsmanship and timeless elegance.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw50a83813/images/beauty/02-MAKEUP/2025/DIORSHOW/LP-INTER/A25M016_DS25_Deva_INTER_NEW_3000x3000.jpg?sw=2048" class="img-fluid product-image" alt="Dior Accessories" />
+    </div>
+  </div>
+
+
+
+<!-- Carousel Section -->
+<section class="container py-5">
+  <h2 class="section-title">Iconic Dior Products</h2>
+  <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dwbb9964b3/images/beauty/0-HOME/BEAUTY/2025/06-JUNE/FDP25_SAUVAGE_EF_3700x2000.jpg?sw=1920" class="d-block w-100" alt="Perfume">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw03c4bee5/images/beauty/0-HOME/BEAUTY/2025/05-MAY/S687-D-LINE-25-M11H-Le-Baume-OK-JISOO_SW_F39_3700x2000.jpg?sw=1920" class="d-block w-100" alt="Fashion Show">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw4c862826/images/beauty/0-HOME/BEAUTY/2025/06-JUNE/Backstage25_Model_Jenna_Stick_3700x2000.jpg?sw=1920" class="d-block w-100" alt="Makeup">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; Copyright@2025 Dior</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
